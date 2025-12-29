@@ -3,10 +3,22 @@
 #include <unistd.h>
 #include <stdint.h>
 
+typedef enum {
+    FALSE = 0,
+    false = 0,
+    TRUE = 1,
+    true = 1
+} boolean;
+
+
 int main()
 {
-    char a = 65;
-    char b = 'A';
+    boolean pb;
+    pb = TRUE;
+
+    char a = 10;
+    char b = a++;
+    a++
     unsigned char c = 255;
 
     // Ukazka roznej interpretacie hodnot v premennych
